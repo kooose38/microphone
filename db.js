@@ -9,11 +9,8 @@ async function setUp() {
 
    await db.migrate({ force: true });
 
-   const faq = await db.all(`select * from FAQ ORDER BY createDate DESC`);
-   console.log(`ALL faq TABLE`, JSON.stringify(faq, null, 2));
-
-   const car = await db.all(`select * from Car`);
-   console.log(`ALL faq TABLE`, JSON.stringify(car, null, 2));
+   const faq = await db.all(`select * from microphone`);
+   console.log(`ALL microphone TABLE`, JSON.stringify(faq, null, 2));
 };
 
 setUp();
